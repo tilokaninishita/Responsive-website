@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>My Web Studio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="My Web Studio home">
+      <span class="logo" aria-hidden="true"></span>
+      <span><b>My Web Studio</b><small>Websites that fit every screen</small></span>
+    </a>
+    <a class="hdr-call" href="tel:+910000000000">Call +91 00000 00000</a>
+  </div>
+</header>
+
+<!-- NAVBAR + MENU -->
+<nav class="navbar" aria-label="Main">
+  <div class="wrap nav-inner">
+    <span class="nav-title">Menu</span>
+    <ul class="menu" id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn nav-cta" href="#contact">Get a quote</a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  </div>
+</nav>
+
+<!-- CONTENT: every section is one page of the single page app -->
+<main>
+  <div class="wrap">
+
+    <section class="view" id="home">
+      <div class="hero">
+        <div>
+          <h1>Websites with depth, built for every screen.</h1>
+          <p class="lead">Real 3D motion made with plain HTML, CSS and JavaScript. It stays smooth on phones and clear on wide screens.</p>
+          <div class="actions">
+            <a class="btn" href="#contact">Start a project</a>
+            <a class="btn ghost" href="#work">See our work</a>
+          </div>
+        </div>
+        <div class="scene" id="scene" aria-label="3D cube you can drag to rotate">
+          <div class="cube" id="cube">
+            <div class="face f1">HTML</div><div class="face f2">CSS</div><div class="face f3">JS</div>
+            <div class="face f4">Mobile</div><div class="face f5">Fast</div><div class="face f6">Design</div>
+          </div>
+          <div class="floor"></div>
+          <small class="hint">Drag to rotate</small>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div><b>120+</b><span>sites launched</span></div>
+        <div><b>2 days</b><span>to first draft</span></div>
+        <div><b>98/100</b><span>average speed score</span></div>
+        <div><b>24 h</b><span>reply time</span></div>
+      </div>
+
+      <div class="cta">
+        <div><h2>Have a shop, clinic or class?</h2><p>Tell us what you do. We will send a plan and a fixed price.</p></div>
+        <a class="btn dark" href="#contact">Talk to us</a>
+      </div>
+    </section>
+
+    <section class="view" id="services">
+      <h2>What we do</h2>
+      <div class="bento">
+        <div class="card hl wide"><span class="icon">📱</span><h3>Mobile-first websites</h3><p>Designed on a phone first, then widened for tablets and laptops. Menus, forms and buttons are easy to use with one thumb.</p></div>
+        <div class="card"><span class="icon">🛒</span><h3>Online stores</h3><p>Product pages, cart and payment links.</p></div>
+        <div class="card"><span class="icon">🎨</span><h3>UI design</h3><p>Screens you can review before coding.</p></div>
+        <div class="card"><span class="icon">🔍</span><h3>Search basics</h3><p>Titles and structure that help people find you.</p></div>
+        <div class="card"><span class="icon">🔧</span><h3>Fixes</h3><p>Broken on mobile? We repair it.</p></div>
+        <div class="card wide"><span class="icon">🧰</span><h3>Care plans</h3><p>Monthly updates, backups and small edits, so you never wait for a developer.</p></div>
+      </div>
+      <h2 class="gap">How a project runs</h2>
+      <ol class="steps">
+        <li><h3>Brief</h3><p>You tell us your goals and customers.</p></li>
+        <li><h3>Design</h3><p>We share page layouts for phone and desktop.</p></li>
+        <li><h3>Build</h3><p>We code it and test on real devices.</p></li>
+        <li><h3>Launch</h3><p>We publish it and fix issues for 30 days.</p></li>
+      </ol>
+    </section>
+
+    <section class="view" id="work">
+      <h2>Recent work</h2>
+      <p>Swipe the ring or use the buttons to browse projects.</p>
+      <div class="ring-wrap" id="ringWrap" tabindex="0" aria-label="Project carousel. Use the left and right arrow keys."><div class="ring" id="ring">
+        <div class="tile" style="--i:0;--a:#14532d;--b:#16a34a"><span>Spice Route Café<small>Menu and table booking</small></span></div>
+        <div class="tile" style="--i:1;--a:#0b5d57;--b:#0f8f82"><span>Rao Family Clinic<small>Appointments and doctor profiles</small></span></div>
+        <div class="tile" style="--i:2;--a:#a3194f;--b:#d94677"><span>Noor Boutique<small>Online store</small></span></div>
+        <div class="tile" style="--i:3;--a:#9a4208;--b:#d97706"><span>FitLab Gym<small>Plans and class timetable</small></span></div>
+        <div class="tile" style="--i:4;--a:#1f2937;--b:#4b5563"><span>Kids Code Club<small>Course pages and sign-up</small></span></div>
+        <div class="tile" style="--i:5;--a:#3f6212;--b:#65a30d"><span>Green Basket<small>Grocery delivery site</small></span></div>
+      </div></div>
+      <div class="ring-ctl"><button class="btn ghost" id="prev" type="button">‹ Previous</button><button class="btn ghost" id="next" type="button">Next ›</button></div>
+
+    </section>
+
+    <section class="view" id="about">
+      <h2>About My Web Studio</h2>
+      <div class="two">
+        <div>
+          <p>We are a small team of designers and developers who like websites that are simple to use. Every project starts with your customers: who they are, what they look for and what makes them call.</p>
+          <p>We keep projects short. You see a draft early, tell us what to change, and we ship.</p>
+        </div>
+        <ul class="checks">
+          <li>Fixed price quote before work starts</li>
+          <li>Tested on phone, tablet and laptop</li>
+          <li>Source files handed over to you</li>
+          <li>30 days of free fixes after launch</li>
+        </ul>
+      </div>
+      <h2 class="gap">The team</h2>
+      <div class="grid">
+        <div class="card person"><span class="avatar"></span><div><h3>xyz</h3><p>Design lead</p></div></div>
+        <div class="card person"><span class="avatar"></span><div><h3>xyz</h3><p>Front-end developer</p></div></div>
+        <div class="card person"><span class="avatar"></span><div><h3>xyz</h3><p>Project manager</p></div></div>
+      </div>
+    </section>
+
+    <section class="view" id="contact">
+      <h2>Contact us</h2>
+      <div class="two">
+        <div>
+          <p>Send a short note about your project. We reply within one working day.</p>
+          <ul class="checks">
+            <li>Email: hello@mystudio.example</li>
+            <li>Phone: +91 00000 00000</li>
+            <li>Hours: Mon–Sat, 10 am–7 pm</li>
+          </ul>
+        </div>
+        <form class="card" id="contactForm" novalidate>
+          <label>Your name <input type="text" id="name" autocomplete="name" required></label>
+          <label>Email <input type="email" id="email" autocomplete="email" required></label>
+          <label>Message <textarea id="message" required></textarea></label>
+          <button class="btn" type="submit">Send message</button>
+          <p id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><h3>My Web Studio</h3><p>Simple, fast websites for growing businesses.</p></div>
+      <div><h3>Pages</h3><ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div><h3>Reach us</h3><p>hello@mystudio.example<br>+91 00000 00000<br>Mon–Sat, 10 am–7 pm</p></div>
+    </div>
+    <div class="copy"><span>© <span id="year"></span> My Web Studio. All rights reserved.</span><a href="#home">Back to top</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
